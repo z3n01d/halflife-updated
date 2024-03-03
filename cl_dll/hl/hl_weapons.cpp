@@ -459,6 +459,7 @@ void HUD_InitClientWeapons()
 	// Handled locally
 	g_engfuncs.pfnPlaybackEvent = HUD_PlaybackEvent;
 	g_engfuncs.pfnAlertMessage = AlertMessage;
+	g_engfuncs.pfnPvAllocEntPrivateData = PvAllocEntPrivateData;
 
 	// Pass through to engine
 	g_engfuncs.pfnPrecacheEvent = gEngfuncs.pfnPrecacheEvent;
